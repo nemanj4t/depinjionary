@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "target": "ES5",
+    "module": "ESNext",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist/types",
+    "experimentalDecorators": true,
+    "lib": ["ES2021", "DOM"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+}
