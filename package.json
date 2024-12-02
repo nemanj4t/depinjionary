@@ -1,6 +1,6 @@
 {
   "name": "depinjionary",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dependency Injection Container for TS projects",
   "repository": {
     "type": "git",
