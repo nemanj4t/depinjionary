@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Welcome to Depinjionary
 
 ### Why Depinjionary?
