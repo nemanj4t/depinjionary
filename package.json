@@ -7,12 +7,19 @@
     "url": "git+https://github.com/nemanj4t/depinjionary.git"
   },
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/esm/index.js"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build-common": "tsc --project tsconfig.json",
+    "build-esm": "tsc --project tsconfig.esm.json",
+    "build": "tsc --project tsconfig.esm.json && tsc --project tsconfig.json",
     "lint": "tsc"
   },
   "keywords": [],
@@ -21,8 +28,7 @@
   "devDependencies": {
     "@types/core-js": "^2.5.8",
     "@types/node": "^22.10.1",
-    "ts-loader": "^9.5.1",
-    "tsup": "^8.3.5",
+    "@types/reflect-metadata": "^0.0.5",
     "typescript": "^5.5.4"
   },
   "dependencies": {

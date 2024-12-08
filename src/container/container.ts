@@ -3,8 +3,9 @@ import { Provider } from './dto/provider.dto';
 import { Token } from './types/token.type';
 import { ResolverFactory } from './resolvers/resolver.factory';
 import { Type } from './enums/type.enum';
+import { ContainerInterface } from './container.interface';
 
-export class Container {
+export class Container implements ContainerInterface {
   private dependencies: Map<Token, Resolved> = new Map<Token, Resolved>();
   private providers: Map<Token, Provider> = new Map<Token, Provider>();
 

@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "alwaysStrict": true,
-    "outDir": "./dist",
+    "outDir": "./dist/esm",
     "target": "ES2015",
-    "module": "CommonJS",
+    "module": "ESNext",
     "removeComments": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
