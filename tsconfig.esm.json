@@ -7,7 +7,7 @@
     "removeComments": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "strictBindCallApply": true,
